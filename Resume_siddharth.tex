@@ -1,29 +1,53 @@
-\documentclass{article}
+\documentclass[10pt]{scrbook}
 \usepackage[utf8]{inputenc}
 \usepackage{array}
-\author{\Huge\textbf{SIDDHARTH GANERIWALA}}
-\date{}
-\title{}
-\usepackage[a4paper, total={7in, 11in}]{geometry}
+\usepackage[a4paper,left=0.3in,right=0.3in,top=0.15in,bottom=0.15in]{geometry}
 \usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{footmisc}
+\usepackage{ragged2e} %for aligning
 \pagenumbering{gobble}
 \usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[none]{hyphenat}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{boldline}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\setkomafont{section}{\mysection}
+\newcommand{\mysection}[1]{%
+    \sf\bf%
+    \setlength{\fboxsep}{0cm}%already boxed
+    \colorbox{lightgray}{%
+        \begin{minipage}{\linewidth}%
+            \vspace*{2pt}%Space before
+            #1
+            \vspace*{2pt}%Space after
+        \end{minipage}%
+    }}
 \begin{document}
 \begin{flushleft}
 \Huge{\textbf{SIDDHARTH GANERIWALA}}
 \end{flushleft}
 \normalsize
-Sophomore \hspace{10cm} \hfill{siddharth.ganeriwala1996@gmail.com}
+Junior Under-Graduate \hspace{7.5cm} \hfill{siddharth.ganeriwala1996@gmail.com}
 Department of Chemical Engineering \hfill{sidgane@iitk.ac.in} 
 \newline Indian Institute of Technology, Kanpur \hfill{+91 749 923 3350}
-\section*{\underline{Educational Qualifications}}
+\section*{Educational Qualifications}
 
 \begin{center}
 \begin{tabular}{| >{\centering}m{2cm} | >{\centering}m{4.5cm} | >{\centering}m{5.5cm} | c |}
 \hline
 \textbf{Year} & \textbf{Degree} & \textbf{Institute} & \textbf{CPI / \%} \\ 
 \hline
-2019 (expected)	& Bachelor of Technology, Chemical Engineering & Indian Institute of Technology, Kanpur	& 8\textsuperscript{$\ast$} \\
+2019 (expected)	& Bachelor of Technology, Chemical Engineering & Indian Institute of Technology, Kanpur	& 7.8\textsuperscript{$\ast$} \\
 \hline
 2015 & CBSE ( XII Board ) & Sunbeam Lahartara , Varanasi & 95.4 \% \\
 \hline
@@ -32,21 +56,31 @@ Department of Chemical Engineering \hfill{sidgane@iitk.ac.in}
 \end{tabular}
 \end{center}
 \begin{flushright}
-    \small{$\ast$ After 3rd Semester}
+    \small{$\ast$ After 4th Semester}
     $\quad$
 \end{flushright}
 
-\section*{\underline{Academic Achievements}}
+\section*{Academic Achievements}
 \begin{itemize}
 \item Secured an \textbf{All India Rank 5330} in JEE Advanced 2015 conducted by IIT Bombay and about 200,000 students appeared for the exam.
 \item Secured an \textbf{All India Rank 2050} in JEE Main 2015 conducted by CBSE and 1,500,000 students took the exam.
 \item Secured State Rank 10 and \textbf{National Rank 62} in SOF - National Cyber Olympiad. 
-\item Secured State Rank 21 in SOF - International Mathematic Olympiad. 
+\item Secured State Rank 22 in SOF - International Mathematic Olympiad. 
 \end{itemize}
 
+\section*{Work Experience}
+\begin{itemize}
+\item \textbf{NewYork Office,IIT Kanpur} \hfill\textit{May'17-July'17}\\
+\textit{Android App Developer under Prof. Manindra Agarawal , IITK}
+\begin{itemize}
+\item Integrated Fabric library in app which made it easier to monitor the crash reports and real time analytics of the app.
+\item Improved UI/UX of the app by implementing features associated with menus, viewpagers, card views, preference layouts etc. adhering to Google’s Material Design guidelines.
+\item Served as the peer mentor to all other inters and the Team-Lead for a team of 3 interns.
 
+\end{itemize}
+\end{itemize}
 
-\section*{\underline{Projects}}
+\section*{Projects}
 \begin{itemize}
 \item \textbf{Entrance Identification} \hfill\textit{January'16 - April'16}
 \begin{itemize}
@@ -76,28 +110,38 @@ Department of Chemical Engineering \hfill{sidgane@iitk.ac.in}
 \item Course Project for TA201 ( Manufacturing Processes) done under Prof. Shashank Shekhar.
 \item Fabricated a model of Vertical Lift Bridge whose height could be varied to give the way to large ships.
 \item Prepared the computer aided design of its prototype on Solidworks.
+\item Awarded as \textbf{Best Sectional Project} among many other projects. 
+
+\end{itemize}
+\item \textbf{Herbal Soap} \hfill\textit{January'17-April'17}
+\begin{itemize}
+\item Course Project for CHE261 ( Chemical Process Industries) done under Prof. Animangsu Ghatak.
+\item Prepared a soap using all herbal products like Neem,Rose etc and various pure oils like Coconaut Oil, Olive Oil etc.
 \end{itemize}
 \end{itemize}
 
-\section*{\underline{Relevant Coursework}}
+
+\section*{Relevant Coursework}
 
 \begin{center}
-\begin{tabular}{m{7.5cm}  m{7.5cm}}
- \begin{itemize}
-\item MTH101 - Calculus and Analytic Geometry
-\item ESC101 - Introduction to C Programming
-\item ESO207 - Data Structure And Algorithm \textsuperscript{$\dagger$}
-\item CHE211 - Fluid Mechanics
+\begin{tabular}{m{5cm}  m{5cm} m{5cm}}
 
-\end{itemize}
-&
-\begin{itemize}
-\item MTH102 - Linear Algebra and ODE
-\item ESC201 - Introduction To Electronics
-\item ESO208 - Numerical Methods
-\item CHE221 - Chemical Thermodynamics
+ 
+ Introduction to C Programming &
+  Data Structure And Algorithm &
+  Introduction To Electronics\\
 
-\end{itemize}
+ Calculus and Analytic Geometry &
+ Linear Algebra and ODE &
+ Chemical Process Industries \\
+  Fluid Mechanics &
+  Numerical Methods &
+  Chemical Thermodynamics \\
+  Mass Transfer \textsuperscript{$\dagger$}&
+  Heat Transfer \textsuperscript{$\dagger$}&
+  Chem. Process Simulation lab\textsuperscript{$\dagger$}\\
+
+
 \end{tabular}
 
 \begin{flushright}
@@ -107,7 +151,7 @@ Department of Chemical Engineering \hfill{sidgane@iitk.ac.in}
 \end{center}
 
 
-\section*{\underline{Technical Skills}}
+\section*{Technical Skills}
 \begin{itemize}
 \item \textbf{Programming Skills: } C/C++, Python, Java, Bash. 
 \item \textbf{Software and Utilities: } Git, \LaTeX, Arduino, SolidWorks, Android Studio, Processing, Linux/Shell, Matlab.
@@ -115,7 +159,7 @@ Department of Chemical Engineering \hfill{sidgane@iitk.ac.in}
 \item \textbf{Operating System: } Windows, Ubuntu  
 \end{itemize}
 
-\section*{\underline{Position of Responsibility}}
+\section*{Position of Responsibility}
 \begin{itemize}
 \item \textbf{Secretary, Electronics Club, IIT Kanpur} \hfill\textit{May'16 - April'17}
 \begin{itemize}
@@ -135,17 +179,10 @@ Department of Chemical Engineering \hfill{sidgane@iitk.ac.in}
 \item Convinced various institues of Varanasi to participate in the school level competition TOSC.
 \item Conducted the first-round in Varanasi which witnessed the participation of 700 students.
 \end{itemize}
-\item \textbf{Volunteer, Hospitality, Antaragni'15} \hfill\textit{August'15 - October'15}
-\begin{itemize}
-\item Volunteered and looked into the hospitality of participants.
-\end{itemize}
-\item \textbf{Junior Executive, Marketing, Techkriti'16} \hfill\textit{January'16 - March'16}
-\begin{itemize}
-\item Managed the advertising and merchandise for the festival . 
-\end{itemize}
+
 \end{itemize}
 
-\section*{\underline{Extra-Curricular Activities}}
+\section*{Extra-Curricular Activities}
 \begin{itemize}
 \item Secured 2\textsuperscript{nd} position in Embedded and 4\textsuperscript{th} position in ElectroWiz inter hall technical event,Takneek'16.
 \item Fabricated block stacking robot and designed its electronic circuit in inter hall technical event,Takneek'15.
